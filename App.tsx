@@ -8,6 +8,8 @@ import SignUp from "./src/Screens/signup";
 
 const stack = createNativeStackNavigator();
 
+//https://www.youtube.com/watch?v=pI4hMSoU7f0
+
 export default function App() {
   return (
     <NavigationContainer>

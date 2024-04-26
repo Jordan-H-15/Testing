@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, Pressable } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { styled } from "nativewind";
 import { Colors } from "react-native/Libraries/NewAppScreen";
@@ -86,6 +86,27 @@ export default function Welcome({ navigation }: { navigation: any} ) {
           filled= {true}
           onPress={() => navigation.navigate("Signup")}
         />
+
+        <View style={{
+          flexDirection: 'row',
+          marginTop: 12,
+          justifyContent: 'center'
+        }}>
+          <Text style= {{
+            fontSize: 16,
+            color: COLORS.white
+          }}>
+            Already have an Account ?
+          </Text>
+          <Pressable onPress={() => navigation.navigate("Login")}>
+            <Text style={{
+                fontSize: 16,
+                color: COLORS.white,
+                fontWeight: "bold",
+                marginTop: 4
+            }}>Login</Text>
+          </Pressable>
+        </View>
       </View>
     </LinearGradient>
   );
