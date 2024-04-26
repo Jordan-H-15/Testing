@@ -1,16 +1,13 @@
 import { View, Text, Image } from 'react-native'
-import React from 'react'
 import { LinearGradient } from "expo-linear-gradient";
 import { styled } from 'nativewind';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import COLORS from '../constrants/colours';
+import COLORS from '../constraints/colours';
 
-export default function Welcome() {
+export default function SignUp() {
   return (
     <View>
-      <LinearGradient>
-
-      </LinearGradient>
+      <Text>signup</Text>
     </View>
   )
 }
