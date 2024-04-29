@@ -11,9 +11,13 @@ export default function Welcome({ navigation }: { navigation: any} ) {
       style={{ flex: 1 }}
       colors={[COLORS.secondary, COLORS.primary]}
     >
-      <View>
+      <View style= {{
+        height: "100%",
+        flex: 1,
+        flexDirection: "column",
+      }}>
         <Image
-          source={require(".../asserts/hero1.jpg")}
+          source={require("../images/testing.png")}
           style={{
             height: 100,
             width: 100,
@@ -84,7 +88,7 @@ export default function Welcome({ navigation }: { navigation: any} ) {
           title="Join Now"
           color= {undefined}
           filled= {true}
-          onPress={() => navigation.navigate("Signup")}
+          onPress={() => navigation.navigate("signup")}
         />
 
         <View style={{
@@ -98,7 +102,7 @@ export default function Welcome({ navigation }: { navigation: any} ) {
           }}>
             Already have an Account ?
           </Text>
-          <Pressable onPress={() => navigation.navigate("Login")}>
+          <Pressable onPress={() => navigation.navigate("login")}>
             <Text style={{
                 fontSize: 16,
                 color: COLORS.white,

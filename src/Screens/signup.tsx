@@ -227,7 +227,7 @@ export default function SignUp({ navigation }: { navigation: any} ) {
           }}>
 
           <Image
-          source={require("../assets/facebook.png")}
+          source={require("../images/Facebook.png")}
           style={{
             height:36,
             width:36,
@@ -254,7 +254,7 @@ export default function SignUp({ navigation }: { navigation: any} ) {
           }}>
 
           <Image
-          source={require("../assets/google.png")}
+          source={require("../images/Google.png")}
           style={{
             height:36,
             width:36,
